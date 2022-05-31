@@ -23,4 +23,27 @@ router.post ('/api/notes', (req, res)=> {
 })
 
 
+router.delete ( '/api/notes/:id', (req, res) => {
+fs.readFile('db/db.json', 'utf8', (err,data)=>{
+    if(err) throw err
+    const notesId = req.params.id 
+    const db = JSON.parse(data)
+    for (let i = 0; i < db.length; i++){
+        if (notesId=== db[i].id){
+            db.splice([i],1)
+            fs.writeFile('db/db.json', JSON.stringify(db), (err)=>{
+                if(err) throw err
+                res.json (db)
+            })
+        }
+    }
+
+})
+
+
+})
+
+
+
+
 module.exports = router
