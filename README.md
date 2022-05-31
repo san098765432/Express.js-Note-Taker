@@ -34,6 +34,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 # TECHNOLOGIES USED
 . HTML
 
+# TECHNOLOGIES USED
+. HTML
+
 . CSS
 
 . JavaScript
@@ -45,4 +48,5 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 # LINKS
 
 Heroku deployed app: https://sanyiah-express-note-taker.herokuapp.com/
+
 GitHub Repository: https://github.com/san098765432/Express.js-Note-Taker 
